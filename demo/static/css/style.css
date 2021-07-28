@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+
+span{
+    font-size: 5rem;
+    font-weight: 900;
+}
+button{
+    padding: .5rem .8rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border: none;
+    user-select: none;
+    outline: none;
+    border-radius: 0.5rem;
+    font-weight: 700;
+    font-family: 'Noto Sans JP';
+    background: #4C8BF5;
+    COLOR: #FFF;
+    box-shadow: 0 0 0.5rem #000;
+    transition: 100ms ease-in;
+}
+button:active{
+    font-size: 1.4rem;
+    box-shadow: 0 0 0.2rem #000;
+}
+input[type="file"] {
+    
+}
+.custom-file-upload {
+    border: 1px solid #4C8BF5;
+    cursor: pointer;
+    padding: 1.5rem 1.8rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    user-select: none;
+    outline: none;
+    border-radius: 0.5rem;
+    font-weight: 700;
+    font-family: 'Noto Sans JP';
+    margin-bottom: 2rem ;
+}
