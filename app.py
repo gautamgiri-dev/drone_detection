@@ -15,6 +15,8 @@ REQUIRED_PATHS = [UPLOAD_PATH]
 for path in REQUIRED_PATHS:
     os.makedirs(path, exist_ok=True)
 
+model = load_model(MODEL_PATH)
+
 app = Flask(__name__)
 app.config['UPLOAD_PATH'] = UPLOAD_PATH
 
@@ -45,7 +47,6 @@ def predict(image, target_size=(300,300)):
     image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
     image = image.astype("float") / 255.0
     image = np.expand_dims(image, axis=0)
-    model = load_model(MODEL_PATH)
     
     # prediction and post processing
     results = model.predict(image)
